@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea_3</title>
+    <link rel="stylesheet" href="Css/Index.css"/>
+    <script src="https://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="separador1"></div>
+    <header>
+        <h1>Agenda Multicapas</h1>
+        <p>Aqui podran encontrar la Agenda de contactos y
+          observar el esfuerzo por elaborar una buena pagina
+          web.
+        </p>
+      </header>
+    
+      <div class="separador1"></div>
+
+      <div class="form" id="form" method="post">
+        <label for="Nombre" class="name" id="name">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese un nombre" autocomplete="off">
+        <label for="Apellido" class="lastname">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese un apellido" autocomplete="off">
+        <label for="Telefono" class="number">Telefono:</label>
+        <input type="number" name="telefono" id="telefono" placeholder="Ingrese un telefono" autocomplete="off">
+        <br>
+        <br>
+        <button class="btn_enviar" id="btn_enviar" type="submit">Enviar</button>
+        <button class="btn_obtener" id="btn_obtener" onclick="Actualizar()">Actualizar</button>
+    </div>
+
+
+
+  <div class="container mt-4 shadow-lg p3 mb-5 bg-body rounded">
+     <table class="table table-bordered table-striped">
+          <thead>
+              <tr> 
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Teléfono</th>
+               </tr>
+          </thead>
+               
+              <tbody id="data">
+              </tbody>
+      </table>
+ </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+      <footer class="footer">
+        <div class="inner-footer">
+            <div class="social-links">
+            <ul>
+                <li class="social-items"><a href="https://www.facebook.com/briandariel.lorenzolorenzo.1"><i class="fab fa-facebook"></i></a></li>
+                <li class="social-items"><a href="https://twitter.com/twitter?lang=es"><i class="fab fa-twitter"></i></a></li>
+                <li class="social-items"><a href="https://wa.me/qr/E6BT6OYAH7CHB1"><i class="fab fa-whatsapp"></i></i></a></li>
+                <li class="social-items"><a href="https://www.instagram.com/brian17_07?r=nametag"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            </div>
+        </div>
+        </footer>
+        <br>
+        <div class="outer-footer">
+            Copyright &copy; Brian Dariel Lorenzo.All Rights Reserved
+        </div>
+        <script src="Index.js"></script>
+</body>
+</html>
